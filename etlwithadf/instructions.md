@@ -197,4 +197,4 @@ Once you verify your pipeline is working, publish your changes! Feel free to con
 
 
 
-*Credits for these instructions go to [Daniel Perlovsky](https://github.com/djpmsft/ADF_Labs/blob/master/MovieAnalytics.md).
+*Credits for these instructions go to [Daniel Perlovsky](https://github.com/djpmsft/ADF_Labs/blob/master/MovieAnalytics.md).*
