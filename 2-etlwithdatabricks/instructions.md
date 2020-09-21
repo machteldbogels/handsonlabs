@@ -26,7 +26,7 @@ Estimated Time: 20 minutes
 
     - **Deploy Azure Databricks workspace in your Virtual Network**: **No**.
 
-        ![Creating Azure Databricks in the Azure portal](Linked_Image_Files/M03-E02-T01-img01.png)
+        ![Creating Azure Databricks in the Azure portal](./assets/M03-E02-T01-img01.png)
 
 1. In the **Azure Databricks Service** blade, click **Create**.
 
@@ -42,7 +42,7 @@ Estimated Time: 20 minutes
 
 1. In the **awrgstudxx** screen, click **awdbwsstudxx**, where **xx** are your initials to open Azure Databricks. This will open your Azure Databricks service.
 
-    ![Azure Databricks Service in the Azure portal](Linked_Image_Files/M03-E02-T02-img01.png)
+    ![Azure Databricks Service in the Azure portal](./assets/M03-E02-T02-img01.png)
 
 ### Task 3: Launch a Databricks Workspace and create a Spark Cluster.
 
@@ -66,7 +66,7 @@ Estimated Time: 20 minutes
 
     - Leave all the remaining options to their current settings.
 
-        ![Creating an Azure Databricks Cluster in the Azure portal](Linked_Image_Files/M03-E02-T03-img01.png)
+        ![Creating an Azure Databricks Cluster in the Azure portal](./assets/M03-E02-T03-img01.png)
 
 1. In the **Create Cluster** screen, click on **Create Cluster** and leave the Microsoft Edge screen open.
 
@@ -87,7 +87,7 @@ Estimated Time: 30 minutes
 
 1. In the **awdlsstudxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
-    ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/M03-E03-T02-img01.png)
+    ![Accessing Data Lake Storage account name in the Azure portal](./assets/M03-E03-T02-img01.png)
 
 ### Task 3: Enable your Databricks instance to access the Data Lake Gen2 Store.
 
@@ -99,7 +99,7 @@ Estimated Time: 30 minutes
 
 1. In the register an application screen, provide the **name** of **DLAccess** and under the **Redirect URI (optional)** section, ensure **Web** is selected and type **https://adventure-works.com/exampleapp** for the application value. After setting the values.
 
-    ![Registering an application in the Azure portal](Linked_Image_Files/M03-E03-T03-img01.png)
+    ![Registering an application in the Azure portal](./assets/M03-E03-T03-img01.png)
 
 1. Click **Register**. The DLAccess screen will appear.
 
@@ -109,11 +109,11 @@ Estimated Time: 30 minutes
 
 1. In the Add a client secret screen. type a **description** of **DL Access Key**, and a **duration** of **In 1 year** for the key. When done, click **Add**.
 
-    ![Adding a client secret in the Azure portal](Linked_Image_Files/M03-E03-T03-img02.png)
+    ![Adding a client secret in the Azure portal](./assets/M03-E03-T03-img02.png)
 
     >**Important**: When you click on **Add**, the key will appear as shown in the graphic below. You only have one opportunity to copy this key value into Notepad
 
-    ![Location of the DLAccess Key](Linked_Image_Files/M03-E03-T03-img03.png)
+    ![Location of the DLAccess Key](./assets/M03-E03-T03-img03.png)
 
 1. Copy the **Application key value** and paste it into Notepad
 
@@ -155,7 +155,7 @@ Estimated Time: 30 minutes
 
 1. Ensure that the Cluster states the name of the cluster that you have created earlier, click on **Create**
 
-    ![Creating a Notebook in Azure Databricks](Linked_Image_Files/M03-E03-T04-img01.png)
+    ![Creating a Notebook in Azure Databricks](./assets/M03-E03-T04-img01.png)
 
      > **Note**: This will open up a Notebook with the title My Notebook (Scala).
 
@@ -175,7 +175,7 @@ Estimated Time: 30 minutes
 
 1. In the Notebook, in the cell under **Cmd 1**, click on the **Run** icon and click on **Run Cell** as highlighted in the following graphic. 
 
-    ![Running cvode in a Notebook in Azure Databricks](Linked_Image_Files/M03-E03-T04-img02.png)
+    ![Running cvode in a Notebook in Azure Databricks](./assets/M03-E03-T04-img02.png)
 
     >**Note** A message will be returned at the bottom of the cell that states "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
@@ -183,7 +183,7 @@ Estimated Time: 30 minutes
 
 1. In the Notebook, hover your mouse at the top right of cell **Cmd 1**, and click on the **Add Cell Below** icon. A new cell will appear named **Cmd2**.
 
-    ![Adding a cell in a Notebook in Azure Databricks](Linked_Image_Files/M03-E03-T04-img03.png)
+    ![Adding a cell in a Notebook in Azure Databricks](./assets/M03-E03-T04-img03.png)
 
 1. In the Notebook, in the cell  **Cmd 2**, copy the following code and paste it into the cell:
 
@@ -209,7 +209,7 @@ Estimated Time: 30 minutes
     df.show()
     ```
 
-    ![Running results in a Notebook in Azure Databricks](Linked_Image_Files/M03-E03-T04-img04.png)
+    ![Running results in a Notebook in Azure Databricks](./assets/M03-E03-T04-img04.png)
 
 1. In the Notebook, in the cell under **Cmd 3**, click on the **Run** icon and click on **Run Cell**.
 
@@ -240,7 +240,7 @@ Estimated Time: 10 minutes
 
     >**Note**  A message will be returned at the bottom of the cell that states that a Spark job has executed, a table of results are returned and "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
-    ![Running a scala query in a Notebook in Azure Databricks](Linked_Image_Files/M03-E04-T01-img01.png)
+    ![Running a scala query in a Notebook in Azure Databricks](./assets/M03-E04-T01-img01.png)
 
 ### Task 2: Performing a column rename on a Dataset
 
@@ -259,7 +259,7 @@ Estimated Time: 10 minutes
 
     >**Note**  A message will be returned at the bottom of the cell that states that a Spark job has executed, a table of results are returned and "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
-    ![Renaming columns in a query in a Notebook in Azure Databricks](Linked_Image_Files/M03-E04-T02-img01.png)
+    ![Renaming columns in a query in a Notebook in Azure Databricks](./assets/M03-E04-T02-img01.png)
 
 ### Task 3: Adding Annotations
 
