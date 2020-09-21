@@ -9,3 +9,6 @@ There are four hands-on labs that you can try individually:
 [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
 
 [API Management](https://github.com/pascalvanderheiden/ais-sync-pattern)
+
+
+More generally, you can find very comprehensive learning paths per technology and domain on [aka.ms/learn](https://aka.ms/learn).
