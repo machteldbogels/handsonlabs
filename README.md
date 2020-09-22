@@ -1,14 +1,18 @@
 # Hands-on Labs
 
-This repository provides an overview of hands-on labs that you can work on individually. There is a lab for each of the following topics:
+This repository provides an overview of hands-on labs that you can work on individually consisting of the following topics:
 
+### ETL on Azure
 * [ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/1-etlwithadf/instructions.md)
 * [ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/2-etlwithdatabricks/instructions.md)
 * [Consuming data from a SOAP Service using Azure Data Factory](https://medium.com/@gabrielsribe/consuming-a-soap-service-using-azure-data-factory-copy-data-activity-a4a3332cc4c)
 
+### Sample scenarios around app development
 * [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
-* [API Management](https://github.com/pascalvanderheiden/ais-sync-pattern)
+* [API Management](https://github.com/pascalvanderheiden/ais-async-pattern)
+* [API Management with CI/CD](https://github.com/pascalvanderheiden/ais-sync-pattern)
 
+### Virtual Machines
 * [Create/Manage a Linux VM using CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm)
 * [Load balancing Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-load-balancer)
 * [Create/Manage VNets for Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-virtual-network)
