@@ -20,4 +20,4 @@ This repository provides an overview of hands-on labs that you can work on indiv
 
 
 
-Generally speaking, you can find very comprehensive learning paths per technology and domain on [aka.ms/learn](https://aka.ms/learn).
+Generally speaking, you can find very comprehensive learning paths per technology and domain throught the [Microsoft Documentation](https://docs.microsoft.com/en-us/) as well as the learning page on [aka.ms/learn](https://aka.ms/learn).
