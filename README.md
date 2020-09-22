@@ -7,7 +7,7 @@ This repository provides an overview of hands-on labs that you can work on indiv
 * [ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/2-etlwithdatabricks/instructions.md)
 * [Consuming data from a SOAP Service using Azure Data Factory](https://medium.com/@gabrielsribe/consuming-a-soap-service-using-azure-data-factory-copy-data-activity-a4a3332cc4c)
 
-### Sample scenarios around app development
+### Sample scenarios for App Development
 * [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
 * [API Management](https://github.com/pascalvanderheiden/ais-async-pattern)
 * [API Management with CI/CD](https://github.com/pascalvanderheiden/ais-sync-pattern)
