@@ -14,6 +14,11 @@ This repository provides an overview of hands-on labs that you can work on indiv
 [API Management](https://github.com/pascalvanderheiden/ais-sync-pattern)
 
 [Create/Manage a Linux VM using CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm)
+[Load balancing Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-load-balancer)
+[Create/Manage VNets for Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-virtual-network)
+[Monitor Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-monitor)
+[Use Azure Security Center for Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-azure-security)
+[CI/CD to Azure VMs using Azure Pipelines](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-azure-pipelines?tabs=java)
 
 
 
