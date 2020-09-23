@@ -10,9 +10,9 @@ This repository provides an overview of hands-on labs that you can work on indiv
 
 ### Sample scenarios for App Development
 * [Build a Java webapp with app service and Cosmos Db](https://docs.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb)
-* [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
-* [Azure Integration Services Async](https://github.com/pascalvanderheiden/ais-async-pattern)
-* [Azure Integration Services Sync](https://github.com/pascalvanderheiden/ais-sync-pattern)
+* [Full stack: Building an intelligent app](https://github.com/microsoft/TailwindTraders)
+* [CI/CD: Azure Integration Services with an asynchronous pattern](https://github.com/pascalvanderheiden/ais-async-pattern)
+* [CI/CD: Azure Integration Services with a synchronous pattern](https://github.com/pascalvanderheiden/ais-sync-pattern)
 
 ### Virtual Machines
 * [Create/Manage a Linux VM using CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm)
