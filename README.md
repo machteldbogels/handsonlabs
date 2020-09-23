@@ -1,6 +1,6 @@
 # Hands-on Labs
 
-This repository provides an overview of hands-on labs that you can work on individually consisting of the following topics:
+This repository provides an overview of hands-on labs that you can work on individually:
 
 ### ETL on Azure
 * [ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithadf/instructions.md)
