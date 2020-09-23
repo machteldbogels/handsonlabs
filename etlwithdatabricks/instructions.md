@@ -18,7 +18,7 @@ Estimated Time: 20 minutes
 
     - **Subscription**: the name of the subscription you are using in this lab
 
-    - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+    - **Resource group**: the name of the resource group you are using in this lab
 
     - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
@@ -34,21 +34,17 @@ Estimated Time: 20 minutes
    
 ### Task 2: Open Azure Databricks.
 
-1. Confirm that the Azure Databricks service has been created.
+1. Confirm that the Azure Databricks service has been created. 
 
-1. In the Azure portal, navigate to the **Resource group** screen.
-
-1. In the Resource groups screen, click on the ****awrgstudxx** resource group, where **xx** are your initials.
-
-1. In the **awrgstudxx** screen, click **awdbwsstudxx**, where **xx** are your initials to open Azure Databricks. This will open your Azure Databricks service.
+1. If you are still in the same window, simply press **Go to resource** or otherwise navigate to the **Resource group** in which your Databricks Workspace is deployed and then click **awdbwsstudxx**, where **xx** are your initials to open Azure Databricks. This will open your Azure Databricks service.
 
     ![Azure Databricks Service in the Azure portal](./assets/M03-E02-T02-img01.png)
 
 ### Task 3: Launch a Databricks Workspace and create a Spark Cluster.
 
-1. In the Azure portal, in the **awdbwsstudxx** screen, click on the button **Launch Workspace**.
+1. In the **awdbwsstudxx** screen, click on the button **Launch Workspace**.
 
-    > **Note**: You will be signed into the Azure Databricks Workspace in a separate tab in Microsoft Edge.
+    > **Note**: You will be signed into the Azure Databricks Workspace in a separate tab in your browser.
 
 1. Under **Common Tasks**, click **New Cluster**.
 
@@ -60,7 +56,7 @@ Estimated Time: 20 minutes
 
     - **Pool**: **None**
 
-    - **Databricks Runtime Version**: **Runtime: 6.3 (Scala 2.11, Spark 2.4.4)**
+    - **Databricks Runtime Version**: **Runtime: 7.2 (Scala 2.12, Spark 3.0.0)**
 
     - Make sure you select the **Terminate after 60** minutes of inactivity check box. If the cluster isn't being used, provide a duration (in minutes) to terminate the cluster.
 
