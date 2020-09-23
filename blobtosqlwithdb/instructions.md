@@ -9,7 +9,7 @@ Please upload the [preferences.json](https://github.com/machteldbogels/handsonla
 
 As a final prerequisite, make sure that there is a SQL Database instance that you can connect to. If you don't have it, you can follow [these instructions](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal) to deploy it.
 
-## Connecting to your Blob Storage
+## Read from your Blob Storage
 Go to your Databricks resource in the Azure Portal and select `Launch Workspace` to go to your Databricks Workspace. 
 
 In the Overview pane of your Databricks Workspace, select the `Import & Explore Data` option in the middle of the page.
@@ -20,4 +20,7 @@ Then select the `Other Data Sources` tab, and press `Create Table in Notebook`.
 
 This will automatically prepopulate a Notebook with which you can connect to an Azure Blob Storage.
 
-Follow the steps which are shown in this Notebook. After Step 4, you can add new cells yourself to write this data to your SQL Database, using [these instructions](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/sql-databases) to guide you.
+Follow the steps which are shown in this Notebook. 
+
+## Write to your SQL Database
+After Step 4, you can add new cells yourself to write this data to your SQL Database, using [these instructions](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/sql-databases) to guide you.
