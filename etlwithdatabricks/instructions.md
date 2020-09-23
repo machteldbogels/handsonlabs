@@ -134,7 +134,7 @@ Estimated Time: 30 minutes
 
 1. In the Azure Active Directory blade, click **Properties**.
 
-1. Click on the Copy icon next to the **Directory ID** to get your tenant ID and paste this into notepad.
+1. Click on the Copy icon next to the **Tenand ID** and paste this into notepad.
 
 1. Save the notepad document in the folder **Allfiles\Labfiles\Starter\DP-200.3** as **DatabricksDetails.txt**
 
