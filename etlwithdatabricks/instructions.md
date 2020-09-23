@@ -93,15 +93,15 @@ Estimated Time: 30 minutes
 
 1. In the **Microsoft - App registrations** screen, click on the **+ New registration** button.
 
-1. In the register an application screen, provide the **name** of **DLAccess** and under the **Redirect URI (optional)** section, ensure **Web** is selected and type **https://adventure-works.com/exampleapp** for the application value. After setting the values.
+1. In the register an application screen, provide the **name** of **DLAccessxx** where **xx** are your initials. and under the **Redirect URI (optional)** section, ensure **Web** is selected and type **https://adventure-works.com/exampleapp** for the application value. After setting the values.
 
     ![Registering an application in the Azure portal](./assets/M03-E03-T03-img01.png)
 
 1. Click **Register**. The DLAccess screen will appear.
 
-1. In the **DLAccess** registered app screen, copy the **Application  (client) ID** and **Directory (tenant) ID** and paste both into Notepad.
+1. In the **DLAccessxx** registered app screen, copy the **Application  (client) ID** and **Directory (tenant) ID** and paste both into Notepad.
 
-1. In the **DLAccess** registered app screen, click on **Certificates and Secrets**, and the click **+ New Client Secret**
+1. In the **DLAccessxx** registered app screen, click on **Certificates and Secrets**, and the click **+ New Client Secret**
 
 1. In the Add a client secret screen. type a **description** of **DL Access Key**, and a **duration** of **In 1 year** for the key. When done, click **Add**.
 
@@ -113,7 +113,8 @@ Estimated Time: 30 minutes
 
 1. Copy the **Application key value** and paste it into Notepad
 
-1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Home** hyperlink, and then the **Resource groups** icon, click on the resource group **awrgstudxx**, where **xx** are your initials.
+
+1.  In the Azure portal, click on the **Home** hyperlink, and then go your **Resource group**.
 
 1. In the **awrgstudxx** screen, click on **Access Control (IAM)** 
 
@@ -123,7 +124,7 @@ Estimated Time: 30 minutes
 
 1. In the **Add role assignment** blade, under Role, select **Storage Blob Data Contributor**.
 
-1. In the **Add role assignment** blade, under Select, select **DLAccess**, and then click **Save**.
+1. In the **Add role assignment** blade, under Select, select **DLAccessxx**, and then click **Save**.
 
 1. In the Azure portal, click the **Home** hyperlink, and then click the **Azure Active Directory** icon, Note **your role**. If you have the User role, you must make sure that non-administrators can register applications.
 
