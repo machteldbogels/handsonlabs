@@ -8,6 +8,7 @@ This repository provides an overview of hands-on labs that you can work on indiv
 * [Consuming data from a SOAP Service using Azure Data Factory](https://medium.com/@gabrielsribe/consuming-a-soap-service-using-azure-data-factory-copy-data-activity-a4a3332cc4c)
 
 ### Sample scenarios for App Development
+* [Build a Java webapp with app service and Cosmos Db](https://docs.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb)
 * [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
 * [Azure Integration Services Async](https://github.com/pascalvanderheiden/ais-async-pattern)
 * [Azure Integration Services Sync](https://github.com/pascalvanderheiden/ais-sync-pattern)
