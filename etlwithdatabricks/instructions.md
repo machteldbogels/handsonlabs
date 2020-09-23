@@ -278,10 +278,6 @@ Estimated Time: 10 minutes
 
 ## Exercise 4: Performing ETL using Scala or Python
 
-If you have completed this lab early, the following sections provide links to content that can help you learn more about basic and advanced transformations in Azure.
-
-If the url are inaccessible, there is a copy of the notebooks ion the _Allfiles\Labfiles\Starter\DP-200.3\Post Course Review_ folder
-
 **Basic transformations**
 
 1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users**, and select **your username** (the entry with house icon).
