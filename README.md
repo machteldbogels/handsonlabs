@@ -1,13 +1,15 @@
 # Hands-on Labs
 
-This repository provides an overview of hands-on labs that you can work on individually consisting of the following topics:
+This repository provides an overview of hands-on labs that you can work on individually:
 
 ### ETL on Azure
 * [ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithadf/instructions.md)
 * [ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithdatabricks/instructions.md)
+* [Connecting to a SQL Database from Azure Databricks using JDBC](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/sql-databases)
 * [Consuming data from a SOAP Service using Azure Data Factory](https://medium.com/@gabrielsribe/consuming-a-soap-service-using-azure-data-factory-copy-data-activity-a4a3332cc4c)
 
 ### Sample scenarios for App Development
+* [Build a Java webapp with app service and Cosmos Db](https://docs.microsoft.com/en-us/azure/app-service/tutorial-java-spring-cosmosdb)
 * [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
 * [Azure Integration Services Async](https://github.com/pascalvanderheiden/ais-async-pattern)
 * [Azure Integration Services Sync](https://github.com/pascalvanderheiden/ais-sync-pattern)
