@@ -9,8 +9,8 @@ This repository provides an overview of hands-on labs that you can work on indiv
 
 ### Sample scenarios for App Development
 * [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
-* [API Management](https://github.com/pascalvanderheiden/ais-async-pattern)
-* [API Management with CI/CD](https://github.com/pascalvanderheiden/ais-sync-pattern)
+* [Azure Integration Services Async](https://github.com/pascalvanderheiden/ais-async-pattern)
+* [Azure Integration Services Sync](https://github.com/pascalvanderheiden/ais-sync-pattern)
 
 ### Virtual Machines
 * [Create/Manage a Linux VM using CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm)
