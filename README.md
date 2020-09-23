@@ -1,14 +1,23 @@
 # Hands-on Labs
 
-There are four hands-on labs that you can try individually:
+This repository provides an overview of hands-on labs that you can work on individually consisting of the following topics:
 
-[ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/1-etlwithadf/instructions.md)
+### ETL on Azure
+* [ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithadf/instructions.md)
+* [ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithdatabricks/instructions.md)
+* [Consuming data from a SOAP Service using Azure Data Factory](https://medium.com/@gabrielsribe/consuming-a-soap-service-using-azure-data-factory-copy-data-activity-a4a3332cc4c)
 
-[ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/2-etlwithdatabricks/instructions.md)
+### Sample scenarios for App Development
+* [Building an intelligent app](https://github.com/microsoft/TailwindTraders)
+* [API Management](https://github.com/pascalvanderheiden/ais-async-pattern)
+* [API Management with CI/CD](https://github.com/pascalvanderheiden/ais-sync-pattern)
 
-[Building an intelligent app](https://github.com/microsoft/TailwindTraders)
+### Virtual Machines
+* [Create/Manage a Linux VM using CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm)
+* [Load balancing Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-load-balancer)
+* [Create/Manage VNets for Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-virtual-network)
+* [Monitor Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-monitor)
+* [Use Azure Security Center for Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-azure-security)
+* [CI/CD to Azure VMs using Azure Pipelines](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-azure-pipelines?tabs=java)
 
-[API Management](https://github.com/pascalvanderheiden/ais-sync-pattern)
-
-
-More generally, you can find very comprehensive learning paths per technology and domain on [aka.ms/learn](https://aka.ms/learn).
+Generally speaking, you can find very comprehensive learning paths per technology and domain on the [Microsoft Documentation](https://docs.microsoft.com/en-us/) as well as the learning page on [aka.ms/learn](https://aka.ms/learn).
