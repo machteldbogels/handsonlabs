@@ -64,7 +64,7 @@ Estimated Time: 20 minutes
 
         ![Creating an Azure Databricks Cluster in the Azure portal](./assets/M03-E02-T03-img01.png)
 
-1. In the **Create Cluster** screen, click on **Create Cluster** and leave the Microsoft Edge screen open.
+1. In the **Create Cluster** screen, click on **Create Cluster** and leave the browser tab open.
 
 > **Note**: The creation of the Azure Databricks instance will take approximately 10 minutes as the creation of a Spark cluster is simplified through the graphical user interface. You will note that the **State** of **Pending** whilst the cluster is being created. This will change to **Running** when the Cluster is created.
 
@@ -75,11 +75,11 @@ Estimated Time: 30 minutes
 
 ### Task 1: Confirm the creation of the Databricks cluster
 
-1. Return back to Microsoft Edge, under **Interactive Clusters** confirm that the state column is set to **Running** for the cluster named **awdbclstudxx**, where **xx** are your initials.
+1. After the cluster is created, you can confirm under **Interactive Clusters** that the state column is set to **Running** for the cluster named **awdbclstudxx**, where **xx** are your initials.
 
 ### Task 2: Collect the Azure Data Lake Store Gen2 account name
 
-1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstudxx**, and then click on **awdlsstudxx**, where **xx** are your initials.
+1. Go back to the Azure Portal, click on your **Resource group**, and then click on **awdlsstudxx**, where **xx** are your initials.
 
 1. In the **awdlsstudxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
