@@ -6,6 +6,7 @@ This repository provides an overview of hands-on labs that you can work on indiv
 * [ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithadf/instructions.md)
 * [Getting started with Azure Databricks](https://docs.microsoft.com/en-us/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal?tabs=azure-portal)
 * [ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithdatabricks/instructions.md)
+* [Getting started with Delta Lake in Azure Databricks](https://docs.microsoft.com/en-us/azure/databricks/delta/quick-start)
 * [Connecting to a SQL Database from Azure Databricks using JDBC](https://github.com/machteldbogels/handsonlabs/blob/master/blobtosqlwithdb/instructions.md)
 * [Consuming data from a SOAP Service using Azure Data Factory](https://medium.com/@gabrielsribe/consuming-a-soap-service-using-azure-data-factory-copy-data-activity-a4a3332cc4c)
 
