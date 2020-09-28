@@ -1,14 +1,3 @@
-## Lab objectives
-  
-After completing this lab, you will be able to:
-
-1. Explain Azure Databricks
-1. Work with Azure Databricks
-1. Read data with Azure Databricks
-1. Perform transformations with Azure Databricks
-
-**Note: If you are not able to create a Service Principal within your Azure Sandbox, then please skip Exercise 2 and 3 and continue with Exercise 4.**
-
 ## Exercise 1: Work with Azure Databricks
   
 Estimated Time: 20 minutes
