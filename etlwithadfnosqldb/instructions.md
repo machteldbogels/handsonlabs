@@ -161,8 +161,6 @@ Now that you have moved the data into ADLS, you are ready to build a Mapping Dat
 
 At this point, You have finished building your 8 transformation Mapping Data Flow. It's time to run the pipeline and see the results!
 
-![Data Flow Canvas](./assets/MovieAnalytics/DataFlowCanvas.PNG "Data Flow Canvas")
-
 ## Running the Pipeline
 
 Go to the pipeline canvas. In the Execute Data Flow activity's settings tab, you will see the data flow selected and the compute environment used. In this lab, you should use the default 4 core general purpose cluster. 
