@@ -1,6 +1,4 @@
 ## Exercise 1: Work with Azure Databricks
-  
-Estimated Time: 20 minutes
 
 ### Task 1: Create and configure an Azure Databricks instance.
 
