@@ -1,7 +1,7 @@
 # Movies Analytics using Azure Data Factory
 *If you're new to Azure Data Factory, see [Introduction to Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction).*
 
-In this Lab, you will utilize Azure Data Factory's visual authoring experience to create a pipeline that copies movie data stored in GitHub repository to Azure Data Lake Storage Gen2 and then executes a Mapping Data Flow to transform and write the data to a Azure SQL Database.
+In this Lab, you will utilize Azure Data Factory's visual authoring experience to create a pipeline that copies movie data stored in GitHub repository to Azure Data Lake Storage Gen2 and then executes a Mapping Data Flow to transform and write the data to another container within your Data Lake.
 
 The patterns used in this lab are examples of a modern data warehouse ingestion and transformation scenario using Azure Data Factory.
 
