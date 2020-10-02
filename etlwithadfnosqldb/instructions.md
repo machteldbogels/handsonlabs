@@ -1,3 +1,5 @@
+*This lab is replicated from [Daniel Perlovsky's repo](https://github.com/djpmsft/ADF_Labs/blob/master/MovieAnalytics.md).*
+
 # Movies Analytics using Azure Data Factory
 *If you're new to Azure Data Factory, see [Introduction to Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction).*
 
@@ -197,4 +199,4 @@ Once you verify your pipeline is working, publish your changes! Feel free to con
 
 
 
-*Credits for these instructions go to [Daniel Perlovsky](https://github.com/djpmsft/ADF_Labs/blob/master/MovieAnalytics.md).*
+
