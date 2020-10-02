@@ -3,7 +3,7 @@
 This repository provides an overview of hands-on labs that you can work on individually:
 
 ### ETL on Azure
-* [ETL with Azure Data Factory](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithadfnosqldb/instructions.md)
+* [ETL with Azure Data Factory](https://github.com/djpmsft/ADF_Labs/blob/master/MovieAnalytics.md)
 * [Getting started with Azure Databricks](https://docs.microsoft.com/en-us/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal?tabs=azure-portal)
 * [ETL with Azure Databricks](https://github.com/machteldbogels/handsonlabs/blob/master/etlwithdatabricks/instructions.md)
 * [Getting started with Delta Lake in Azure Databricks](https://docs.microsoft.com/en-us/azure/databricks/delta/quick-start)
