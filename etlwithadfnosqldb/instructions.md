@@ -1,7 +1,7 @@
 # Movies Analytics using Azure Data Factory
 *If you're new to Azure Data Factory, see [Introduction to Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction).*
 
-In this Lab, you will utilize Azure Data Factory's visual authoring experience to create a pipeline that copies movie data stored in GitHub repository to Azure Data Lake Storage Gen2 and then executes a Mapping Data Flow to transform and write the data to another container within your Data Lake.
+In this Lab, you will utilize Azure Data Factory's visual authoring experience to create a pipeline that copies movie data stored in GitHub repository to Azure Data Lake Storage Gen2 and then executes a Mapping Data Flow to transform and write the data to a Azure SQL Database.
 
 The patterns used in this lab are examples of a modern data warehouse ingestion and transformation scenario using Azure Data Factory.
 
@@ -17,6 +17,9 @@ Please allot about two hours to complete this lab end to end.
 * **Azure Data Lake Storage Gen2 storage account**: If you don't have an ADLS
     Gen2 storage account, see the instructions in [Create an ADLS Gen2 storage
     account](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+
+* **Azure SQL Database account**: If you don't have a SQL DB account, see the instructions in [Create a SQL DB
+    account](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal).
 
 ## Setting up your environment
 
@@ -110,16 +113,14 @@ Now that you have moved the data into ADLS, you are ready to build a Mapping Dat
     Once your debug cluster is warmed up, verify your data is loaded correctly via the Data Preview tab. Once you click the refresh button, Mapping Data Flow will show calculate a snapshot of what your data looks like when it is at each transformation.
     ![Data Flow](./assets/MovieAnalytics/dataflow4.png)
 
-1. **Add a Select transformation to rename and drop a column** 
-You may have noticed that the Rotton Tomatoes column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](https://docs.microsoft.com/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
+1. **Add a Select transformation to rename and drop a column** You may have noticed that the Rotton Tomatoes column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](https://docs.microsoft.com/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
     ![Data Flow](./assets/MovieAnalytics/dataflow5.png)
 
     In the Name as field, change 'Rotton' to 'Rotten'. To drop the Rating column, hover over it and click on the trash can icon.
 
     ![Select](./assets/MovieAnalytics/Select.PNG "Select")
 
-1. **Add a Filter Transformation to filter out unwanted years** 
-Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the + icon next to your Select transformation and choosing Filter under Row Modifier. Click on the expression box to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** will convert the string year value to an integer and filter rows if that value is above 1950.
+1. **Add a Filter Transformation to filter out unwanted years** Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the + icon next to your Select transformation and choosing Filter under Row Modifier. Click on the expression box to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** will convert the string year value to an integer and filter rows if that value is above 1950.
 
     ![Filter](./assets/MovieAnalytics/Filter.PNG "Filter")
 
@@ -127,8 +128,7 @@ Say you are only interested in movies made after 1951. You can add a [Filter tra
 
     ![Filter Expression](./assets/MovieAnalytics/FilterExpression.PNG "Filter Expression")
 
-1. **Add a Derive Transformation to calculate primary genre** 
-As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the first genre in each column, you can derive a new column via the [Derived Column](https://docs.microsoft.com/azure/data-factory/data-flow-derived-column) transformation by clicking on the + icon next to your Filter transformation and choosing Derived under Schema Modifier. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.
+1. **Add a Derive Transformation to calculate primary genre** As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the first genre in each column, you can derive a new column via the [Derived Column](https://docs.microsoft.com/azure/data-factory/data-flow-derived-column) transformation by clicking on the + icon next to your Filter transformation and choosing Derived under Schema Modifier. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.
 
     ![Derive](./assets/MovieAnalytics/Derive.PNG "Derive")
 
@@ -136,8 +136,7 @@ As you may have noticed, the genres column is a string delimited by a '|' charac
 
     ![Derive output](./assets/MovieAnalytics/DeriveOutput.PNG "Derive output")
 
-1. **Rank movies via a Window Transformation** 
-Say you are interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](https://docs.microsoft.com/azure/data-factory/data-flow-window) to define window-based aggregations by clicking on the + icon next to your Derived Column transformation and clicking Window under Schema modifier. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, a calculate a new column called RatingsRank which is equal to the rank each movie has within its specific genre-year.
+1. **Rank movies via a Window Transformation** Say you are interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](https://docs.microsoft.com/azure/data-factory/data-flow-window) to define window-based aggregations by clicking on the + icon next to your Derived Column transformation and clicking Window under Schema modifier. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, a calculate a new column called RatingsRank which is equal to the rank each movie has within its specific genre-year.
 
     ![Window Over](./assets/MovieAnalytics/WindowOver.PNG "Window Over")
 
@@ -147,8 +146,7 @@ Say you are interested in how a movie ranks within its year for its specific gen
 
     ![Window Rank](./assets/MovieAnalytics/WindowRank.PNG "Window Rank")
 
-1. **Aggregate ratings with an Aggregate Transformation** 
-Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](https://docs.microsoft.com/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by clicking on the + icon next to your Window transformation and clicking Aggregate under Schema modifier. As you did in the window transformation, lets group movies by genre and year
+1. **Aggregate ratings with an Aggregate Transformation** Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](https://docs.microsoft.com/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by clicking on the + icon next to your Window transformation and clicking Aggregate under Schema modifier. As you did in the window transformation, lets group movies by genre and year
 
     ![Agg group by](./assets/MovieAnalytics/AggGroupBy.PNG "Agg group by")
 
@@ -158,13 +156,26 @@ Now that you have gathered and derived all your required data, we can add an [Ag
 
     ![Aggregate](./assets/MovieAnalytics/Aggregate.PNG "Aggregate")
 
+1. **Specify Upsert condition via an Alter Row Transformation** If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](https://docs.microsoft.com/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier. Since you are always inserting and updating, you can specify that all rows will always be upserted.
 
+    ![Upsert](./assets/MovieAnalytics/AlterRow.PNG "Upsert")
 
-1. Now that you have finished all your transformation logic, you are ready to write to a `Sink`.
+1. **Write to a SQL DB Sink** Now that you have finished all your transformation logic, you are ready to write to a Sink.
     1. Add a Sink by clicking on the + icon next to your Upsert transformation and clicking Sink under Destination.
-    1. In the Sink tab, create a new dataset that links to your Data Lake.
+    1. In the Sink tab, create a new SQL DB dataset via the + New button.
+    ![Data Flow](./assets/MovieAnalytics/dataflow6.png)
+    1. Select Azure SQL Data Database from the tile list.
+    ![Data Flow](./assets/MovieAnalytics/dataflow7.png)
+    1. Select a new linked service and configure your SQL DB connection credentials. Click 'Create' when finished.
+    ![Data Flow](./assets/MovieAnalytics/dataflow8.png)
+    1. In the dataset configuration, select 'Create new table' and enter in your desired table name. Click 'Finish' once completed.
+    ![Data Flow](./assets/MovieAnalytics/dataflow9.png)
+    1. Since an upsert condition was specified, you need to go to the Settings tab and select 'Allow upsert' based on key columns PrimaryGenre and year.
+    ![Sink](./assets/MovieAnalytics/Sink.PNG "Sink")
 
 At this point, You have finished building your 8 transformation Mapping Data Flow. It's time to run the pipeline and see the results!
+
+![Data Flow Canvas](./assets/MovieAnalytics/DataFlowCanvas.PNG "Data Flow Canvas")
 
 ## Running the Pipeline
 
