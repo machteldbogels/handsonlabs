@@ -24,4 +24,4 @@ This repository provides an overview of hands-on labs that you can work on indiv
 * [Use Azure Security Center for Linux VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-azure-security)
 * [CI/CD to Azure VMs using Azure Pipelines](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-azure-pipelines?tabs=java)
 
-Generally speaking, you can find very comprehensive learning paths per technology and domain on the [Microsoft Documentation](https://docs.microsoft.com/en-us/) as well as the learning page on [aka.ms/learn](https://aka.ms/learn).
+Generally speaking, you can find comprehensive learning paths per technology and domain on the [Microsoft Documentation](https://docs.microsoft.com/en-us/) as well as the learning page on [aka.ms/learn](https://aka.ms/learn).
